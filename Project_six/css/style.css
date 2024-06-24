@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.input-field .icons {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+}
+
+.text h5 {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(125, 180, 235);
+}
+
+.login {
+  border: 2px solid;
+  width: fit-content;
+  background-color: rgb(27, 120, 137);
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 6px;
+}
+
+.sign {
+  background-color: rgb(114, 114, 114);
+}
+
+.new-line {
+  display: block;
+  padding-left: 33px;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  min-height: 100vh;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../image/bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.my-right-col {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+}
+
+.my-right-col .text-danger {
+  color: red;
+}
+
+.my-row {
+  position: absolute;
+  top: 60px;
+}
+
+@media (max-width: 768px) {
+  .info-box .d-flex p {
+    margin-bottom: 0;
+  }
+}
