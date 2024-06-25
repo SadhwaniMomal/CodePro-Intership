@@ -10,7 +10,7 @@
   border-radius: 20px;
   position: relative;
   z-index: 2;
-  top: 85px;
+  top: 110px;
 }
 
 .sideimg img {
@@ -23,7 +23,7 @@
 .second-container {
   background-color: gainsboro;
   position: relative;
-  top: 70px;
+  bottom: -99px;
   z-index: 1;
 }
 
