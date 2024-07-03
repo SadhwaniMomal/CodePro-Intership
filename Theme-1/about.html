@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justice Navbar</title>
+    <!-- BOOTSTRAP CSS CDN  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap JS CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- FONT AWESOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CUSTOM CSS LINK -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Custom Js link -->
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- HEADER START HERE -->
+    <header class="">
+      <!-- 1. TOP BAR START HERE  -->
+      <div class="top-bar py-2 d-lg-block d-none">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <div class="Contact-info">
+            <a href="mailto:info@example.com"
+              ><i class="fas fa-envelope"></i> info@example.com</a
+            >
+            |
+            <a href="tel:+0123456789"
+              ><i class="fas fa-phone"></i> +012 345 6789</a
+            >
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- 1. TOP BAR END HERE  -->
+
+      <!-- 2. NAVBAR START HERE  -->
+      <nav class="navbar navbar-expand-lg bg-dark my-navbar">
+        <div class="container">
+          <a class="navbar-brand my-navbar-brand fs-1" href="#">JUSTICE</a>
+          <button
+            class="my-navbar-toggler d-lg-none d-block"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-xmark navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto my-navbar-nav">
+              <li class="nav-item my-navbar-item active">
+                <a
+                  class="nav-link my-nav-link px-4"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item my-navbar-item">
+                <a class="nav-link my-nav-link px-4" href="./about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item my-navbar-item">
+                <a class="nav-link my-nav-link px-4" href="./contact.html"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item my-navbar-item">
+                <a class="nav-link my-nav-link px-4" href="./faqs.html"
+                  >FAQ's</a
+                >
+              </li>
+            </ul>
+            <a class="btn btn-custom ms-auto" href="#">Get A Quote</a>
+          </div>
+        </div>
+      </nav>
+      <!-- 2. NAVBAR END HERE  -->
+    </header>
+    <!-- HEADER END HERE -->
+
+    <!-- 2. Carousel Start here -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide mb-3"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner my-carousel-inner">
+        <div
+          class="carousel-item my-carousel-item active"
+          style="
+            background-image: url('./images/law4.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          "
+        >
+          <div class="my-carousel-title">
+            <p>RESULTS YOU DESERVE</p>
+            <h1>We Prepared To Oppose For You</h1>
+            <a href="#" class="btn btn-custom text-decoration-none"
+              >Get An Appointment</a
+            >
+          </div>
+        </div>
+        <div
+          class="carousel-item my-carousel-item"
+          style="
+            background-image: url('./images/law1.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          "
+        >
+          <div class="my-carousel-title">
+            <p>RESULTS YOU DESERVE</p>
+            <h1>We Prepared To Oppose For You</h1>
+            <a href="#" class="btn btn-custom text-decoration-none"
+              >Get An Appointment</a
+            >
+          </div>
+        </div>
+        <div
+          class="carousel-item my-carousel-item"
+          style="
+            background-image: url('./images/law5.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          "
+        >
+          <div class="my-carousel-title">
+            <p>RESULTS YOU DESERVE</p>
+            <h1>We Prepared To Oppose For You</h1>
+            <a href="#" class="btn btn-custom text-decoration-none"
+              >Get An Appointment</a
+            >
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- 2. Carousel end here -->
+
+    <!-- 3. About me start here -->
+    <div class="container my-about-container mb-3">
+      <div class="row justify-content-center align-items-center text-center">
+        <div class="col-md-5">
+          <div
+            class="about-image"
+            style="background-image: url('./images/men.png')"
+          ></div>
+        </div>
+        <div class="col-md-5 about-content py-4">
+          <p class="head">About Me</p>
+          <h2>Expert Legal Advice</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            reiciendis alias modi in temporibus aut voluptates necessitatibus
+            vitae hic nulla voluptas ad eligendi ab dolorem eos, vero
+            dignissimos atque inventore.
+          </p>
+          <img src="./images/sign.png" alt="" class="signature" />
+          <h5>Lawyers</h5>
+          <p class="text-muted">Lorem, ipsum dolor.</p>
+        </div>
+      </div>
+    </div>
+    <!-- 3. About me end here -->
+
+    <!-- 4. Meet Our Team -->
+    <div class="container border border-danger mb-3 team-member py-4">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-4">
+          <h2>Meet Our Team</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+            quaerat ducimus numquam! Suscipit, dicta ea?
+          </p>
+          <button class="btn btn-custom mb-3">Feel Free To Contact US</button>
+        </div>
+
+        <div class="col-12 col-md-3 mb-4 h-100">
+          <div class="rounded h-100 position-relative">
+            <div
+              class="image-wrapper h-100"
+              style="
+                background-image: url('./images/people2.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+              "
+            >
+              <div class="my-social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="lawyer-men bg-white w-75 text-center">
+              <h2>Lawyer</h2>
+              <p>Family Lawyer</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 mb-4 h-100">
+          <div class="rounded h-100 position-relative">
+            <div
+              class="image-wrapper h-100"
+              style="
+                background-image: url('./images/people2.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+              "
+            >
+              <div class="my-social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="lawyer-men bg-white w-75 text-center">
+              <h2>Lawyer</h2>
+              <p>Family Lawyer</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 mb-4 h-100">
+          <div class="rounded h-100 position-relative">
+            <div
+              class="image-wrapper h-100"
+              style="
+                background-image: url('./images/people2.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+              "
+            >
+              <div class="my-social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="lawyer-men bg-white w-75 text-center">
+              <h2>Lawyer</h2>
+              <p>Family Lawyer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 4. Meet Our Team -->
+
+    <!-- Client Reviews Start Here  -->
+    <div class="container-fluid mb-3 TESTIMONIAL py-3">
+      <h2 class="text-center">TESTIMONIAL</h2>
+      <h3 class="text-center mb-3">What Our Clients Say</h3>
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="card">
+            <div class="card-body">
+              <div
+                id="testimonialCarousel"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <!-- Set interval to 1 second -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="circle-img">
+                      <img
+                        src="./images/men.png"
+                        alt="Client 1"
+                        class="client-image rounded"
+                        style="width: 60px; height: 60px"
+                      />
+                    </div>
+                    <p>
+                      "They understood our business and objectives from the
+                      start and were able to give us ideas for things to build
+                      into our website. We couldn’t be more pleased with our new
+                      website and look forward to working with them on an
+                      ongoing basis."
+                    </p>
+                    <p class="text-muted">- John Doe, Client 1</p>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="circle-img">
+                      <img
+                        src="./images/men.png"
+                        alt="Client 1"
+                        class="client-image rounded"
+                        style="width: 60px; height: 60px"
+                      />
+                    </div>
+                    <p>
+                      "During the building of my website I experienced a few
+                      unexpected changes with my practice, which in turn changed
+                      my goals for my website. This didn't phase the team at
+                      all. They were able to keep me focused, change the website
+                      design, and incorporate the changes into my website in a
+                      way that surpassed my original expectations -- which were
+                      already quite high."
+                    </p>
+                    <p class="text-muted">- Jane Smith, Client 2</p>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="circle-img">
+                      <img
+                        src="./images/men.png"
+                        alt="Client 1"
+                        class="client-image rounded"
+                        style="width: 60px; height: 60px"
+                      />
+                    </div>
+                    <p>
+                      "The Modern Firm worked with me to create a website that
+                      beautifully and compellingly reflected our firm’s legacy.
+                      They were patient with me as I gave a significant amount
+                      of feedback to work towards my very specific vision. I am
+                      100% confident that my personal time commitment was
+                      reduced and the final product was significantly better
+                      than if I had gone with a web designer that didn’t focus
+                      on law firms. Many thanks to the entire team."
+                    </p>
+                    <p class="text-muted">- Bob Johnson, Client 3</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Client Reviews End Here  -->
+
+    <!-- Footer Start Here  -->
+    <footer class="w-100 my-footer">
+      <div class="container-fluid">
+        <div class="row justify-content-center mb-4">
+          <div
+            class="col-12 col-md-4 location-detail px-5 d-flex flex-column align-items-center align-items-stretch"
+          >
+            <div class="detail d-flex align-items-center w-100">
+              <a href="#" class=""><i class="fa-solid fa-location-dot"></i></a>
+              <div class="px-3">
+                <h5 class="m-0">Our Office</h5>
+                <p class="m-0">Hyderabad Sindh, Pakistan</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-4 location-detail px-5 d-flex flex-column align-items-center align-items-stretch"
+          >
+            <div class="detail d-flex align-items-center w-100">
+              <a href="#" class=""><i class="fa-solid fa-envelope"></i></a>
+              <div class="px-3">
+                <h5 class="m-0">Email Us</h5>
+                <p class="m-0">info@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-4 location-detail px-5 d-flex flex-column align-items-center align-items-stretch"
+          >
+            <div class="detail d-flex align-items-center w-100">
+              <a href="#" class=""><i class="fa-solid fa-phone-volume"></i></a>
+              <div class="px-3">
+                <h5 class="m-0">Call Us</h5>
+                <p class="m-0">+92 033 0000 555</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center my-footer-list">
+          <div class="col-md-4">
+            <a class="navbar-brand my-navbar-brand fs-1" href="#">JUSTICE</a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+              optio debitis assumenda, distinctio obcaecati architecto!
+            </p>
+            <div class="social-icons mb-3">
+              <a href="#" class="px-3"
+                ><i class="fab fa-facebook-f text-white"></i
+              ></a>
+              <a href="#" class="px-3"
+                ><i class="fab fa-twitter text-white"></i
+              ></a>
+              <a href="#" class="px-3"
+                ><i class="fab fa-linkedin-in text-white"></i
+              ></a>
+              <a href="#" class="px-3"
+                ><i class="fab fa-instagram text-white"></i
+              ></a>
+              <a href="#" class="px-3"
+                ><i class="fab fa-youtube text-white"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-7 py-4">
+            <div class="row">
+              <div class="col-md-4">
+                <h5>Popular Links</h5>
+                <ul class="list-unstyled">
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Contact</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                  <li>FAQ's</li>
+                  <li>Help</li>
+                  <li>Terms & Privacy</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h5>Newsletters</h5>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Deleniti, reprehenderit!
+                </p>
+                <form action="#">
+                  <div class="input-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Your Email"
+                      aria-label="Your Email"
+                    />
+                    <button class="btn btn-custom text-black" type="submit">
+                      Sign Up
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer End Here  -->
+    <!-- 5. WHATSAPP BUTTON START HERE -->
+    <!-- here whatapp code  -->
+    <a
+      href="https://api.whatsapp.com/send?phone=#"
+      target="_blank"
+      class="whatsapp-chat text-decoration-none"
+    >
+      <i class="fab fa-whatsapp fs-2"></i>
+    </a>
+    <!-- 5. WHATSAPP BUTTON END HERE -->
+    <!-- BOOTSTRAP Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

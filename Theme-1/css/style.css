@@ -1,0 +1,660 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 1. NavBAr Start here css */
+
+/* Top Bar CSS */
+.top-bar {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.top-bar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-bar a:hover {
+  color: #d4af37;
+}
+
+.top-bar .social-icons a {
+  margin-left: 10px;
+  color: #fff;
+}
+
+.top-bar .social-icons a:hover {
+  color: #d4af37;
+}
+
+/* Navbar CSS */
+.my-navbar-brand {
+  font-weight: bold;
+  color: #d4af37; /* Gold color */
+}
+
+.my-navbar-nav .my-nav-link {
+  color: #fff;
+}
+
+.my-navbar-nav .my-nav-link:hover {
+  color: #d4af37;
+}
+
+.my-navbar .my-navbar-nav .my-nav-link.active {
+  color: #d4af37;
+}
+
+.my-navbar .my-navbar-nav .my-nav-link {
+  color: #fff;
+}
+.active-nav-link {
+  color: #d1b87b; /* or any other active color you want */
+}
+
+.btn-custom {
+  background-color: #d4af37;
+  color: #fff;
+}
+
+.btn-custom:hover {
+  background-color: #c29d34;
+}
+
+.my-navbar .my-navbar-toggler {
+  border: 1px solid #d4af37; /* Only one border color declaration */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.my-navbar .navbar-toggler-icon {
+  background-color: transparent;
+  color: #d1b87b;
+  padding: 3px;
+  text-align: center;
+}
+
+.Contact-info {
+  padding: 5px;
+  font-size: larger;
+  box-shadow: rgba(182, 179, 179, 0.3) 0px 19px 38px,
+    rgba(225, 216, 216, 0.22) 0px 15px 12px;
+  border-radius: 5px;
+}
+.social-icons a i {
+  border-radius: 5px;
+
+  padding: 10px;
+  font-size: larger;
+  box-shadow: rgba(182, 179, 179, 0.3) 0px 19px 38px,
+    rgba(225, 216, 216, 0.22) 0px 15px 12px;
+}
+
+/* 1. NAVBAR END CSS HERE */
+
+/* <!-- 2. Carousel Start here --> */
+
+.my-carousel-inner {
+  height: 500px;
+}
+
+.my-carousel-item {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000;
+}
+
+.my-carousel-title {
+  text-align: center; /* Horizontally centers text */
+  color: white;
+  font-weight: bold;
+  display: flex; /* Allows flexbox layout */
+  flex-direction: column; /* Stacks items vertically */
+  justify-content: center; /* Centers items vertically */
+  align-items: center; /* Centers items horizontally */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .my-carousel-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .my-carousel-title p {
+    font-size: 14px; /* Adjust as needed */
+  }
+  .my-carousel-title h1 {
+    font-size: 24px; /* Adjust as needed */
+  }
+  .btn-custom {
+    font-size: 14px; /* Adjust as needed */
+  }
+}
+
+/* <!-- 2. Carousel End here --> */
+
+/* 3. Description Start Here  */
+.container-custom {
+  margin-bottom: 20px;
+  padding: 40px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+.quote {
+  width: 75%;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-family: "Georgia", serif;
+  background-color: #ffffff;
+}
+.text-content {
+  font-style: italic;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+.signature {
+  width: 15%;
+  margin: 10px 0;
+}
+.author {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+/* 3. Description End Here  */
+
+/* 4. partices start here  */
+.practice-area {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+  margin-top: 20px; /* Adjust margin top */
+  margin-bottom: 20px; /* Adjust margin bottom */
+}
+.practice-area .icon {
+  font-size: 40px;
+  color: #6c757d;
+}
+.practice-area .card {
+  border: none;
+  text-align: center;
+}
+.practice-area .card-body {
+  padding: 30px;
+}
+.practice-area .more-services {
+  background-color: #d1b87b;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+}
+.carousel-indicators li {
+  background-color: #d1b87b;
+}
+.left-content {
+  padding-right: 50px;
+}
+
+.pagination .my-page-item .my-page-link {
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: #d1b87b;
+}
+
+.pagination .my-page-item .my-page-link:hover {
+  border: none;
+  outline: none;
+  background-color: #d1b87b;
+  color: #000;
+}
+
+/* 4. partices  here  */
+
+/* 5. Experience In Various Cases start here */
+/* Custom CSS for the experience section */
+.my-experience {
+  height: auto;
+  background-image: url("../images/law5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; /* Ensure the position is relative for child positioning */
+}
+
+.my-experience::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay color and opacity */
+}
+
+.my-experience .my-exp-text {
+  z-index: 1; /* Ensure content is above the overlay */
+}
+
+.my-experience h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.my-experience h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.my-experience p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-experience .my-btn-custom {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #d1b87b; /* Your custom button background color */
+  color: #000; /* Button text color */
+}
+
+.my-experience .my-btn-custom:hover {
+  background-color: #000; /* Button hover background color */
+  color: #d1b87b; /* Button hover text color */
+}
+
+/* Center aligning text and button vertically */
+
+/* 5. Experience In Various Cases end here */
+
+/* 6. Why Choose Me  Start here  */
+.why-choose {
+  height: auto; /* Change to auto for better responsiveness */
+  padding: 20px 0; /* Add some padding for spacing */
+  position: relative;
+  height: 75vh;
+}
+
+.why-choose .why-choose-img {
+  background-image: url("../images/law3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  height: 450px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: absolute;
+  left: 200px;
+  top: 20px;
+}
+
+.features {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  height: auto; /* Change to auto for better responsiveness */
+  position: absolute;
+  top: 50px;
+  right: 200px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+@media (max-width: 760px) {
+  .features {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.features h2 {
+  margin-bottom: 20px;
+  text-align: center; /* Center align the heading */
+}
+
+.features .feature-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.features .feature-item .number {
+  font-size: 1.5em;
+  margin-right: 15px;
+  background-color: #d1b87b;
+  color: #000;
+  padding: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* 6. Why Choose Me  End here  */
+
+/* 7. Footer css start here  */
+.my-footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.location-detail .detail {
+  color: white;
+  padding: 10px 20px;
+  background-color: #6c757d;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+.location-detail .detail a i {
+  color: #d1b87b;
+  font-size: 24px;
+}
+
+.detail a {
+  text-decoration: none;
+}
+
+.navbar-brand.my-navbar-brand {
+  color: #d1b87b;
+  text-decoration: none;
+}
+
+.social-icons a {
+  color: white;
+}
+
+.social-icons a:hover {
+  color: #d1b87b;
+}
+
+input.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 0;
+}
+
+.btn-custom {
+  background-color: #d1b87b;
+  border: none;
+  border-radius: 0;
+  padding: 0.375rem 0.75rem;
+}
+
+.btn-custom:hover {
+  background-color: #bfa25e;
+}
+
+.my-footer-list h5 {
+  color: #d1b87b;
+}
+
+.my-footer-list ul.list-unstyled li {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.my-footer-list ul.list-unstyled li:hover {
+  color: #d1b87b;
+}
+
+/* 7. Footer css end here  */
+
+/* Whatapp cs  */
+
+.whatsapp-chat {
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  z-index: 1000;
+  font-size: 1.5em;
+  margin-right: 15px;
+  background-color: #25d366;
+  color: #fff;
+  padding: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* About Section Start Here  */
+/* 1. aboutme start here */
+.my-about-container {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 50px 0; /* Adjust padding as needed */
+}
+
+.about-image {
+  height: 450px; /* Set height of the image container */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-content {
+  background-color: white; /* White background for content */
+  border: 0px solid #dee2e6; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.head {
+  color: #d1b87b; /* Custom heading color */
+}
+
+.signature {
+  width: 25%; /* Adjust signature image size */
+}
+
+/* 1. aboutme end here */
+
+/* 2. team start here  */
+
+.image-wrapper {
+  position: relative;
+  height: 400px !important;
+  overflow: hidden;
+}
+
+.image-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay color */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-wrapper:hover::before {
+  opacity: 0.7; /* Adjusted overlay opacity */
+}
+
+.my-social-icons {
+  position: absolute;
+  top: 40%;
+  right: -30px; /* Adjusted position from the right */
+  transform: translateY(-40%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.1;
+  transition: opacity 0.3s ease, right 0.3s ease;
+}
+
+.image-wrapper:hover .my-social-icons {
+  right: 0;
+  opacity: 1;
+}
+
+.my-social-icons a {
+  background-color: #343a40;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: larger;
+  box-shadow: rgba(195, 193, 193, 0.3) 0px 19px 38px,
+    rgba(171, 169, 169, 0.22) 0px 15px 12px;
+}
+
+.my-social-icons a:hover {
+  color: #d1b87b;
+}
+
+.lawyer-men p {
+  margin: 0;
+  color: #d1b87b; /* Adjusted text color */
+}
+
+.lawyer-men {
+  border: 1px solid #d1b87b;
+  position: absolute;
+  bottom: -30px;
+  left: 40px;
+}
+
+@media (max-width: 760px) {
+  .image-wrapper {
+    height: 590px !important;
+  }
+  .lawyer-men {
+    border: 1px solid #d1b87b;
+    position: absolute;
+    bottom: -15px;
+    left: 70px;
+    z-index: 1;
+  }
+}
+/* 2. team end here */
+
+/* 3. testimonial start here */
+.badge {
+  margin-right: 5px;
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+/* Style for testimonial cards */
+.TESTIMONIAL {
+  background-color: #d1b87b;
+}
+.testimonial-section {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.testimonial-section .card {
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-section .card-header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+  text-align: center; /* Center align the title */
+}
+
+.testimonial-section .card-title {
+  font-size: 24px; /* Increase font size */
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.testimonial-section .card-body {
+  padding: 30px 50px; /* Increase padding for better spacing */
+}
+
+.testimonial-section .carousel-item {
+  padding: 30px;
+  text-align: center;
+  display: none; /* Hide all carousel items by default */
+}
+
+.testimonial-section .carousel-item.active {
+  display: block; /* Display active carousel item */
+}
+
+.testimonial-section .carousel-item p {
+  font-size: 18px; /* Adjust font size */
+  font-style: italic;
+  margin-bottom: 20px; /* Increase bottom margin */
+  color: #333; /* Darken text color */
+  display: none; /* Hide all paragraphs by default */
+}
+
+.testimonial-section .carousel-item.active p {
+  display: block; /* Display paragraphs in active carousel item */
+}
+
+.testimonial-section .carousel-item .text-muted {
+  font-size: 16px; /* Adjust font size */
+  color: #666;
+}
+
+.testimonial-section .carousel-item.active .text-muted {
+  display: block; /* Display text-muted in active carousel item */
+}
+
+.testimonial-section .client-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  display: none; /* Hide client images by default */
+}
+
+.testimonial-section .carousel-item.active .client-image {
+  display: block; /* Display client image in active carousel item */
+}
+
+.circle-img {
+  font-size: 1.5em;
+  margin-right: 20px;
+  color: #000;
+  padding: 35px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* 3.testimonial End here */
+/* About Section End Here  */

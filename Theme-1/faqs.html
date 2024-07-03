@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justice Navbar</title>
+    <!-- BOOTSTRAP CSS CDN  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- FONT AWESOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CUSTOM CSS LINK -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER START HERE -->
+    <header class="">
+      <!-- 1. TOP BAR START HERE  -->
+      <div class="top-bar py-2 d-lg-block d-none">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <div class="Contact-info">
+            <a href="mailto:info@example.com"
+              ><i class="fas fa-envelope"></i> info@example.com</a
+            >
+            |
+            <a href="tel:+0123456789"
+              ><i class="fas fa-phone"></i> +012 345 6789</a
+            >
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- 1. TOP BAR END HERE  -->
+
+      <!-- 2. NAVBAR START HERE  -->
+      <nav class="navbar navbar-expand-lg bg-dark my-navbar">
+        <div class="container">
+          <a class="navbar-brand my-navbar-brand fs-1" href="#">JUSTICE</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto my-navbar-nav">
+              <li class="nav-item my-navbar-item active">
+                <a class="nav-link my-nav-link px-4" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item my-navbar-item">
+                <a
+                  class="nav-link text-white my-navbar-link px-4"
+                  href="./about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item my-navbar-item">
+                <a
+                  class="nav-link text-white my-navbar-link px-4"
+                  href="./contact.html"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item my-navbar-item">
+                <a
+                  class="nav-link text-white my-navbar-link px-4"
+                  href="./faqs.html"
+                  >FQA's</a
+                >
+              </li>
+            </ul>
+            <a class="btn btn-custom ms-auto" href="#">Get A Quote</a>
+          </div>
+        </div>
+      </nav>
+      <!-- 2. NAVBAR END HERE  -->
+    </header>
+    <!-- HEADER END HERE -->
+
+    <!-- 2. Carousel Start here -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide mb-3"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner my-carousel-inner">
+        <div
+          class="carousel-item my-carousel-item active"
+          style="
+            background-image: url('./images/law4.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          "
+        >
+          <div class="my-carousel-title">
+            <p>BEST LAW AGENCY</p>
+            <h1>Our Fighting Is For Your Justice</h1>
+            <a href="#" class="btn btn-custom text-decoration-none"
+              >Get An Appointment</a
+            >
+          </div>
+        </div>
+        <div
+          class="carousel-item my-carousel-item"
+          style="
+            background-image: url('./images/law1.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          "
+        >
+          <div class="my-carousel-title">
+            <p>BEST LAW AGENCY</p>
+            <h1>Our Fighting Is For Your Justice</h1>
+            <a href="#" class="btn btn-custom text-decoration-none"
+              >Get An Appointment</a
+            >
+          </div>
+        </div>
+        <div
+          class="carousel-item my-carousel-item"
+          style="
+            background-image: url('./images/law5.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          "
+        >
+          <div class="my-carousel-title">
+            <p>BEST LAW AGENCY</p>
+            <h1>Our Fighting Is For Your Justice</h1>
+            <a href="#" class="btn btn-custom text-decoration-none"
+              >Get An Appointment</a
+            >
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- 2. Carousel end here -->
+
+    <!-- BOOTSTRAP JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
