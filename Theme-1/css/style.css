@@ -76,7 +76,9 @@
 }
 
 .my-navbar-item .active {
-  color: #d1b87b !important;
+  color: #d1b87b;
+  border: none;
+  outline: none;
 }
 
 .my-navbar .navbar-toggler-icon {
