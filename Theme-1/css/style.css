@@ -663,4 +663,24 @@ input.form-control {
 }
 
 /* 3.testimonial End here */
+/* Contact Section Start HEre */
+.form-contact-info i {
+  font-size: 2rem;
+  color: #d1b87b;
+}
+
+.contact-side {
+  background-color: #fefcfc;
+}
+
+.form-container .form-control {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+.form-container .form-control:focus {
+  box-shadow: none;
+  border-color: #d1b87b;
+}
 /* About Section End Here  */
