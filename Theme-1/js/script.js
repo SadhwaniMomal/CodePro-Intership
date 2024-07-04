@@ -1,16 +1,32 @@
+// Navbar
+document.addEventListener("DOMContentLoaded", () => {
+  const links = {
+    "index.html": "home-link",
+    "about.html": "about-link",
+    "contact.html": "contact-link",
+    "faqs.html": "faqs-link",
+  };
+
+  const currentPath = window.location.pathname.split("/").pop();
+  const activeLinkId = links[currentPath];
+
+  if (activeLinkId) {
+    document.getElementById(activeLinkId).classList.add("active");
+  }
+});
+// Navbar
+
 document.addEventListener("DOMContentLoaded", function () {
-  const currentPage = window.location.pathname;
+  const accordionButtons = document.querySelectorAll(".accordion-button");
 
-  // Remove any existing active classes
-  const navLinks = document.querySelectorAll(".my-nav-link");
-  navLinks.forEach((link) => {
-    link.classList.remove("active-nav-link");
-  });
-
-  // Loop through each nav link and add active class to the matching one
-  navLinks.forEach((link) => {
-    if (link.getAttribute("href") === currentPage) {
-      link.classList.add("active-nav-link");
-    }
+  accordionButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const icon = this.querySelector(".accordion-icon");
+      if (this.classList.contains("collapsed")) {
+        icon.textContent = "+";
+      } else {
+        icon.textContent = "-";
+      }
+    });
   });
 });

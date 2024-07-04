@@ -75,6 +75,10 @@
   background-color: transparent;
 }
 
+.my-navbar-item .active {
+  color: #d1b87b !important;
+}
+
 .my-navbar .navbar-toggler-icon {
   background-color: transparent;
   color: #d1b87b;
@@ -683,4 +687,127 @@ input.form-control {
   box-shadow: none;
   border-color: #d1b87b;
 }
+
+/* Contact end here */
+
+/* my-accordion strat here*/
+.accordion-header {
+  background-color: #d1b87b !important;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.accordion-button {
+  background-color: #d1b87b !important;
+  color: white !important;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  padding-left: 20px; /* Adjust padding for better alignment */
+}
+
+.accordion-icon {
+  background-color: #d1b87b;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.accordion-button:not(.collapsed) .accordion-icon {
+  content: "-"; /* Use ::before pseudo-element for icon text */
+}
+
+.accordion-button:focus {
+  background-color: #d1b87b;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+/* .accordion-button.collapsed .accordion-icon::before {
+  content: "+";
+} */
+
+/* my-accordion end here*/
+
+/* servies-customers start here */
+
+.services-customers .customer-services-img {
+  width: 50% !important;
+  max-width: 250px;
+}
+
+.services-customers .text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services-customers h1 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.services-customers p {
+  color: #34495e;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem; /* Adds space between buttons */
+}
+
+.custom-btns {
+  border: 2px solid #666 !important;
+  background-color: transparent !important;
+  color: black;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
+    rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+    rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+    rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+    rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
+    rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
+
+.custom-btns:hover {
+  background-color: black !important;
+
+  color: #d1b87b;
+}
+
+.call-btn {
+  margin-right: 1rem;
+}
+
+.guides-btn {
+  background-color: #000;
+}
+
+.guides-btn:hover {
+  background-color: black !important;
+
+  color: #d1b87b;
+}
+
+/* servies-customers end here */
 /* About Section End Here  */
