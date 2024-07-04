@@ -11,6 +11,14 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+
+    <!-- Bootstrap JS CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <!-- FONT AWESOME CDN -->
     <link
       rel="stylesheet"
@@ -21,6 +29,8 @@
     />
     <!-- CUSTOM CSS LINK -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Custom Js link -->
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <!-- HEADER START HERE -->
@@ -55,7 +65,7 @@
         <div class="container">
           <a class="navbar-brand my-navbar-brand fs-1" href="#">JUSTICE</a>
           <button
-            class="navbar-toggler"
+            class="my-navbar-toggler d-lg-none d-block"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
@@ -63,34 +73,31 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa-solid fa-xmark navbar-toggler-icon"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav me-auto my-navbar-nav">
               <li class="nav-item my-navbar-item active">
-                <a class="nav-link my-nav-link px-4" href="./index.html"
+                <a
+                  class="nav-link my-nav-link px-4"
+                  aria-current="page"
+                  href="./index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item my-navbar-item">
-                <a
-                  class="nav-link text-white my-navbar-link px-4"
-                  href="./about.html"
+                <a class="nav-link my-nav-link px-4" href="./about.html"
                   >About</a
                 >
               </li>
               <li class="nav-item my-navbar-item">
-                <a
-                  class="nav-link text-white my-navbar-link px-4"
-                  href="./contact.html"
+                <a class="nav-link my-nav-link px-4" href="./contact.html"
                   >Contact</a
                 >
               </li>
               <li class="nav-item my-navbar-item">
-                <a
-                  class="nav-link text-white my-navbar-link px-4"
-                  href="./faqs.html"
-                  >FQA's</a
+                <a class="nav-link my-nav-link px-4" href="./faqs.html"
+                  >FAQ's</a
                 >
               </li>
             </ul>
@@ -105,108 +112,153 @@
     <!-- 2. Carousel Start here -->
     <div
       id="carouselExampleIndicators"
-      class="carousel slide mb-3"
+      class="carousel slide mb-5"
       data-bs-ride="carousel"
     >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
       <div class="carousel-inner my-carousel-inner">
         <div
-          class="carousel-item my-carousel-item active"
-          style="
-            background-image: url('./images/law4.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-          "
-        >
-          <div class="my-carousel-title">
-            <p>BEST LAW AGENCY</p>
-            <h1>Our Fighting Is For Your Justice</h1>
-            <a href="#" class="btn btn-custom text-decoration-none"
-              >Get An Appointment</a
-            >
-          </div>
-        </div>
-        <div
           class="carousel-item my-carousel-item"
           style="
-            background-image: url('./images/law1.jpg');
+            background-image: url('./images/fqas.jpg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            opacity: 0.9;
           "
         >
-          <div class="my-carousel-title">
-            <p>BEST LAW AGENCY</p>
-            <h1>Our Fighting Is For Your Justice</h1>
-            <a href="#" class="btn btn-custom text-decoration-none"
-              >Get An Appointment</a
-            >
-          </div>
-        </div>
-        <div
-          class="carousel-item my-carousel-item"
-          style="
-            background-image: url('./images/law5.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-          "
-        >
-          <div class="my-carousel-title">
-            <p>BEST LAW AGENCY</p>
-            <h1>Our Fighting Is For Your Justice</h1>
-            <a href="#" class="btn btn-custom text-decoration-none"
-              >Get An Appointment</a
-            >
+          <div class="my-carousel-title z-1">
+            <p class="text-white text-start z-1">
+              Justice is our commitment, your support is our strength
+            </p>
+            <h1 class="">FAQ'S</h1>
           </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
     <!-- 2. Carousel end here -->
+    <!-- Footer Start Here  -->
+    <footer class="w-100 my-footer">
+      <div class="container-fluid">
+        <div class="row justify-content-center mb-4">
+          <div
+            class="col-12 col-md-4 location-detail px-5 d-flex flex-column align-items-center align-items-stretch"
+          >
+            <div class="detail d-flex align-items-center w-100">
+              <a href="#" class=""><i class="fa-solid fa-location-dot"></i></a>
+              <div class="px-3">
+                <h5 class="m-0">Our Office</h5>
+                <p class="m-0">Hyderabad Sindh, Pakistan</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-4 location-detail px-5 d-flex flex-column align-items-center align-items-stretch"
+          >
+            <div class="detail d-flex align-items-center w-100">
+              <a href="#" class=""><i class="fa-solid fa-envelope"></i></a>
+              <div class="px-3">
+                <h5 class="m-0">Email Us</h5>
+                <p class="m-0">info@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-4 location-detail px-5 d-flex flex-column align-items-center align-items-stretch"
+          >
+            <div class="detail d-flex align-items-center w-100">
+              <a href="#" class=""><i class="fa-solid fa-phone-volume"></i></a>
+              <div class="px-3">
+                <h5 class="m-0">Call Us</h5>
+                <p class="m-0">+92 033 0000 555</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center my-footer-list">
+          <div class="col-md-4">
+            <a class="navbar-brand my-navbar-brand fs-1" href="#">JUSTICE</a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+              optio debitis assumenda, distinctio obcaecati architecto!
+            </p>
+            <div class="social-icons mb-3">
+              <a href="#" class="px-3"
+                ><i class="fab fa-facebook-f text-white"></i
+              ></a>
+              <a href="#" class="px-3"
+                ><i class="fab fa-twitter text-white"></i
+              ></a>
+              <a href="#" class="px-3"
+                ><i class="fab fa-linkedin-in text-white"></i
+              ></a>
+              <a href="#" class="px-3"
+                ><i class="fab fa-instagram text-white"></i
+              ></a>
+              <a href="#" class="px-3"
+                ><i class="fab fa-youtube text-white"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-7 py-4">
+            <div class="row">
+              <div class="col-md-4">
+                <h5>Popular Links</h5>
+                <ul class="list-unstyled">
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Contact</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                  <li>FAQ's</li>
+                  <li>Help</li>
+                  <li>Terms & Privacy</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h5>Newsletters</h5>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Deleniti, reprehenderit!
+                </p>
+                <form action="#">
+                  <div class="input-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Your Email"
+                      aria-label="Your Email"
+                    />
+                    <button class="btn btn-custom text-black" type="submit">
+                      Sign Up
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-    <!-- BOOTSTRAP JS CDN -->
+    <!-- Footer End Here  -->
+    <!-- 5. WHATSAPP BUTTON START HERE -->
+    <!-- here whatapp code  -->
+    <a
+      href="https://api.whatsapp.com/send?phone=#"
+      target="_blank"
+      class="whatsapp-chat text-decoration-none"
+    >
+      <i class="fab fa-whatsapp fs-2"></i>
+    </a>
+    <!-- 5. WHATSAPP BUTTON END HERE -->
+    <!-- BOOTSTRAP Jquery CDN -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
