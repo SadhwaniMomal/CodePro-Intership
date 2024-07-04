@@ -171,9 +171,15 @@
   padding: 20px;
   background-color: #f0f0f0;
 }
-.signature {
-  width: 15%;
-  margin: 10px 0;
+.img-signature {
+  width: 15% !important;
+  height: 20% !important;
+}
+@media (max-width: 760px) {
+  .img-signature {
+    width: 50% !important;
+    margin: 10px 0;
+  }
 }
 .author {
   font-size: 1.8rem;
