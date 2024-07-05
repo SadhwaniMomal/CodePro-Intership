@@ -736,9 +736,9 @@ input.form-control {
   outline: none;
 }
 
-/* .accordion-button.collapsed .accordion-icon::before {
+.accordion-button.collapsed .accordion-icon::before {
   content: "+";
-} */
+}
 
 /* my-accordion end here*/
 
