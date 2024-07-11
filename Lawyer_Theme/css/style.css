@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Roboto Condensed", sans-serif;
+}
+/* ------------------- 1. NAVBAR CSS STARTING -------------------------- */
+.my-navbar .navbar-brand i {
+  color: #deb887 !important;
+}
+
+.my-navbar-nav .nav-item .nav-link.active {
+  color: #deb887;
+}
+
+.my-navbar-nav .nav-item .nav-link {
+  color: gray;
+  font-weight: 500;
+}
+
+.social-icons .btn-free-consult {
+  background-color: #deb887;
+  color: white !important;
+}
+
+.my-toggler {
+  border: 2px solid #deb887;
+  background-color: transparent;
+}
+
+/* ------------------- 1. NAVBAR CSS ENDING -------------------------- */
+
+/* ------------------- 2. Home Container CSS starting -------------------------- */
+
+.home {
+  background-image: url("../images/home1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  border-radius: 5px;
+  padding: 50px 0;
+}
+
+@media (min-width: 992px) {
+  .home {
+    height: 90vh;
+  }
+}
+
+.bottom-text a {
+  color: #deb887 !important;
+}
+
+.contact-link {
+  width: fit-content;
+  background-color: #deb887;
+  color: white;
+}
+
+.text-decoration-underline {
+  text-decoration: underline;
+}
+
+/* ------------------- 2. Home Container CSS Ending -------------------------- */
+
+/* ------------------- 3. about Container CSS Starting -------------------------- */
+.about-section {
+  padding: 20px;
+
+  margin: auto;
+  height: 100% !important;
+}
+
+@media (min-width: 992px) {
+  .about-section {
+    max-width: 900px;
+  }
+}
+.about-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.about-signature {
+  margin-top: 20px;
+  font-family: "Brush Script MT", cursive;
+  font-size: 1.5rem;
+}
+.vertical-text {
+  color: black;
+  font-weight: 600;
+  text-decoration: 2px underline #deb887;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: 0.75rem;
+  left: 0px;
+  top: 18px;
+  font-style: italic;
+}
+.vertical-text-container {
+  display: flex;
+  align-items: center;
+}
+
+/* ------------------- 3. about Container CSS Ending -------------------------- */
+
+/* ------------------- 4. counter Container CSS starting -------------------------- */
+.counter-section {
+  background-color: ghostwhite;
+  border-radius: 3px;
+}
+.counter-section .counter-title h2 {
+  color: #deb887;
+}
+/* ------------------- 4. counter Container CSS Ending -------------------------- */
+
+/* ------------------- 5. Skill Container CSS starting -------------------------- */
+.skills-section {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  position: relative;
+  width: 100% !important;
+}
+
+.left-skill {
+  background-image: url("../images/jell.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  position: relative;
+  box-shadow: rgba(255, 255, 255, 0.4) -5px 5px,
+    rgba(255, 255, 255, 0.3) -10px 10px, rgba(0, 0, 0, 0.2) -15px 15px,
+    rgba(255, 255, 255, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.left-skill::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.left-skill h1,
+.left-skill p,
+.left-skill a {
+  position: relative;
+  z-index: 1;
+}
+
+.right-skill {
+  background-color: ghostwhite;
+  padding: 20px;
+}
+
+.btn-skill {
+  background-color: #deb887;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 !important;
+}
+
+.right-skill h5 {
+  font-weight: 600;
+  text-decoration: underline #deb887;
+}
+.progress {
+  height: 9px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  background-color: #deb887;
+}
+
+/* Additional Styles for Large Devices */
+@media (min-width: 992px) {
+  .left-skill {
+    height: 50vh !important;
+  }
+}
+
+/* ------------------- 5. Skill Container CSS Ending -------------------------- */
+
+/* ------------------- 6. Practice Container CSS Starting -------------------------- */
+.practice-section h5 {
+  font-weight: 600;
+  text-decoration: underline #deb887;
+}
+
+.circle-img img {
+  width: 190px; /* Adjust the size as needed */
+  height: 190px; /* Adjust the size as needed */
+  border-radius: 50%;
+  object-fit: cover;
+}
+.practice-title h4 {
+  color: #deb887;
+  font-size: medium;
+}
+
+/* ------------------- 6. Practice Container CSS Ending -------------------------- */
+
+/* ------------------- 6. Practice Container CSS Ending -------------------------- */
+.case-result {
+  background-color: ghostwhite;
+  cursor: pointer;
+}
+
+.case-result h5 {
+  font-weight: 600;
+  color: #000;
+  text-decoration: underline #deb887;
+}
+
+.case-result .case-col {
+  margin: 0;
+  position: relative; /* Ensure proper positioning */
+}
+
+.case-result-1 {
+  background-image: url("../images/family-laq.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+.case-result-2 {
+  background-image: url("../images/business-law.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+.case-result-3 {
+  background-image: url("../images/civil-right-law.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+.case-title {
+  width: 100%;
+  background-color: rgba(232, 192, 140, 0.85);
+  color: white;
+  font-weight: 500;
+  display: none;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  height: 100%;
+}
+
+.case-title.active,
+.case-result-1:hover .case-title,
+.case-result-2:hover .case-title,
+.case-result-3:hover .case-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------- 6. Practice Container CSS Ending -------------------------- */
+/* ------------------- 7. Attrony Container CSS Starting -------------------------- */
+.attorny-section h5 {
+  font-weight: 600;
+  text-decoration: underline #deb887;
+}
+.attorny-section .att-img-1 {
+  background-image: url("../images/a-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px; /* Ensure a minimum height is set */
+}
+.attorny-section .att-img-2 {
+  background-image: url("../images/a-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px; /* Ensure a minimum height is set */
+}
+.attorny-section .att-img-3 {
+  background-image: url("../images/a-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px; /* Ensure a minimum height is set */
+}
+.attorny-section .att-img-4 {
+  background-image: url("../images/a-4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px; /* Ensure a minimum height is set */
+}
+.circle-imgs img {
+  width: 120px; /* Adjust the size as needed */
+  height: 120px; /* Adjust the size as needed */
+  border-radius: 50%;
+  object-fit: cover;
+}
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* ------------------- 7. Attrony Container CSS Ending -------------------------- */
+
+/* ------------------- 8. testimonial Container CSS Ending -------------------------- */
+.testimonial-section {
+  background-color: ghostwhite;
+  color: white !important;
+  padding: 10px;
+  border-radius: 5px;
+}
+.testimonial-section .ht {
+  font-weight: 600;
+  text-decoration: underline #deb887;
+}
+
+.testimonial {
+  display: flex;
+  /* align-items: center; */
+  padding: 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+}
+
+.testimonial img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-right: 20px;
+  max-width: 100px; /* Adjust size as needed */
+}
+
+.testimonial .content {
+  flex: 1;
+}
+
+.testimonial .content h5 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.testimonial .content .test-signature {
+  margin-top: 20px;
+  font-family: "Brush Script MT", cursive;
+  font-size: 1.5rem;
+}
+
+/* ------------------- 8. testimonial Container CSS Ending -------------------------- */
+
+/* ------------------- 10. footer Container CSS Ending -------------------------- */
+.footer {
+  background-color: #111;
+  padding: 40px 0;
+}
+.footer-content h5 {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footer .gallery img {
+  width: 100px !important;
+  height: 100px !important;
+  padding: 0px !important;
+}
+/* ------------------- 10. footer Container CSS Ending -------------------------- */
